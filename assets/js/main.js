@@ -18,15 +18,20 @@ const app = Vue.createApp({
       */
       correctAnswer: {
         stage1: {
-          q1: 'あああ',
+          q1: '732506',
         },
         stage2: {
-          q1: 'いいい',
+          q1: '59',
           // q2: 'えええ',
           // q3: 'おおお'
         },
         stage3: {
-          q1: 'ううう',
+          q1: '12141',
+          // q2: 'かかか',
+          // q3: 'ききき',
+        },
+        stage4: {
+          q1: '12141',
           // q2: 'かかか',
           // q3: 'ききき',
         }
@@ -48,7 +53,14 @@ const app = Vue.createApp({
           false, // 3-1
           // false, // 3-2
           // false, // 3-3
-        ]
+        ],
+        stage4: [
+          false, // 3-1
+          // false, // 3-2
+          // false, // 3-3
+        ],        
+        
+        
       },
 
       /* ステージの問題が全て正解かどうか */
@@ -56,6 +68,7 @@ const app = Vue.createApp({
         stage1: false,
         stage2: false,
         stage3: false,
+        stage4: false,
       },
 
       /* 次のステージを表示するかどうか
@@ -64,6 +77,7 @@ const app = Vue.createApp({
       next: {
         stage1: false,
         stage2: false,
+        stage3: false,
       },
     }
   },
