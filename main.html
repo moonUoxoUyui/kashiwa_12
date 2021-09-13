@@ -277,7 +277,9 @@ Youtube貼り付けここまで -->
             <div class="clear-message">
               <div class="clear-message__title">STAGE：３　クリア！</div>
               <div class="clear-message__content">ワクチンを打つことができた！<br>
-                これでワクチンを打てばいいはずなのだが...</div>
+                ワクチンを打つことでウイルスの耐性はついたものの、<br>
+                感染者がたくさんいるこの島は危険だ。
+                </div>
                 <button v-on:click="nextStage('stage3')" onclick="location.href='#sectionStage4'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -293,7 +295,8 @@ Youtube貼り付けここまで -->
         <section class="section">
           <div class="container">
             <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：４</span>この島から脱出しよう！</h2>
-            <p class="text-center">ワクチンを打つことでウイルスの耐性はついたものの</p>
+            <p class="text-center">脱出するために
+            はやくこの島から脱出しよう！</p>
             <figure class="image__container">
               <img src="assets/images/stage.png" alt="">
             </figure>
@@ -304,7 +307,7 @@ Youtube貼り付けここまで -->
         <!-- STAGE4-1解答入力セクションここから -->
         <section class="section bg-color--keycolor">
           <div class="container">
-            <h2 class="section-title"><span class="section-title__stage">STAGE：４</span>接種するワクチンの色を入力</h2>
+            <h2 class="section-title"><span class="section-title__stage">STAGE：４</span>パスワードを入力</h2>
             <!-----------------------------------------------------------------------------------------------------------------
               解答入力欄のコンポーネントです。
               v-on:answer-input="answerInput($event, 'stage3', 1, 'final')" は送信ボタンをクリックした時の動作を決める関数です。
